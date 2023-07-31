@@ -1,0 +1,22 @@
+import React, { Component } from 'react';
+import { Circles } from 'react-loader-spinner';
+import '../Styles/styles.css';
+class Loader extends Component {
+  render() {
+    return (
+      <div className="loader">
+        <Circles
+          height="80"
+          width="80"
+          color="#4fa94d"
+          ariaLabel="circles-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+        />
+      </div>
+    );
+  }
+}
+
+export default Loader;
